@@ -1,0 +1,9 @@
+D:\Dropbox\Web Projects\BetssonTest\WalletService\WalletService\bin\WalletService.dll.config
+D:\Dropbox\Web Projects\BetssonTest\WalletService\WalletService\bin\WalletService.dll
+D:\Dropbox\Web Projects\BetssonTest\WalletService\WalletService\bin\WalletService.pdb
+D:\Dropbox\Web Projects\BetssonTest\WalletService\WalletService\bin\EntityFramework.dll
+D:\Dropbox\Web Projects\BetssonTest\WalletService\WalletService\bin\EntityFramework.SqlServer.dll
+D:\Dropbox\Web Projects\BetssonTest\WalletService\WalletService\bin\EntityFramework.xml
+D:\Dropbox\Web Projects\BetssonTest\WalletService\WalletService\bin\EntityFramework.SqlServer.xml
+D:\Dropbox\Web Projects\BetssonTest\WalletService\WalletService\obj\Debug\WalletService.dll
+D:\Dropbox\Web Projects\BetssonTest\WalletService\WalletService\obj\Debug\WalletService.pdb

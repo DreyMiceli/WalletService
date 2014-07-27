@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Wallet.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="WalletStoreContainer">
+    <EntitySet Name="Accounts" EntityType="Wallet.Store.Accounts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WalletTransactions" EntityType="Wallet.Store.WalletTransactions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AccountStates" EntityType="Wallet.Store.AccountStates" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TransactionTypes" EntityType="Wallet.Store.TransactionTypes" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="AccountWalletTransaction" Association="Wallet.Store.AccountWalletTransaction">
+      <End Role="Account" EntitySet="Accounts" />
+      <End Role="WalletTransaction" EntitySet="WalletTransactions" />
+    </AssociationSet>
+    <AssociationSet Name="AccountStateAccount" Association="Wallet.Store.AccountStateAccount">
+      <End Role="AccountState" EntitySet="AccountStates" />
+      <End Role="Account" EntitySet="Accounts" />
+    </AssociationSet>
+    <AssociationSet Name="TransactionTypeWalletTransaction" Association="Wallet.Store.TransactionTypeWalletTransaction">
+      <End Role="TransactionType" EntitySet="TransactionTypes" />
+      <End Role="WalletTransaction" EntitySet="WalletTransactions" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Accounts">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Balance" Type="decimal" Nullable="false" DefaultValue="0" Precision="18" Scale="2" />
+    <Property Name="AccountStateId" Type="int" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime" Nullable="true" />
+    <Property Name="DateClosed" Type="datetime" Nullable="true" />
+  </EntityType>
+  <EntityType Name="WalletTransactions">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="TransactionID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountID" Type="bigint" Nullable="false" />
+    <Property Name="TransactionTypeId" Type="int" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime" Nullable="true" />
+    <Property Name="Amount" Type="decimal" Nullable="false" DefaultValue="0" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="AccountStates">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="State" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TransactionTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="AccountWalletTransaction">
+    <End Role="Account" Type="Wallet.Store.Accounts" Multiplicity="1" />
+    <End Role="WalletTransaction" Type="Wallet.Store.WalletTransactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="WalletTransaction">
+        <PropertyRef Name="AccountID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AccountStateAccount">
+    <End Role="AccountState" Type="Wallet.Store.AccountStates" Multiplicity="1" />
+    <End Role="Account" Type="Wallet.Store.Accounts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccountState">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Account">
+        <PropertyRef Name="AccountStateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TransactionTypeWalletTransaction">
+    <End Role="TransactionType" Type="Wallet.Store.TransactionTypes" Multiplicity="1" />
+    <End Role="WalletTransaction" Type="Wallet.Store.WalletTransactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TransactionType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="WalletTransaction">
+        <PropertyRef Name="TransactionTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

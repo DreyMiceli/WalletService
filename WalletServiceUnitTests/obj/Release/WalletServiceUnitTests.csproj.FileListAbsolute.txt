@@ -1,0 +1,5 @@
+D:\Dropbox\Web Projects\BetssonTest\WalletService\WalletServiceUnitTests\bin\Release\WalletServiceUnitTests.dll.config
+D:\Dropbox\Web Projects\BetssonTest\WalletService\WalletServiceUnitTests\bin\Release\WalletServiceUnitTests.dll
+D:\Dropbox\Web Projects\BetssonTest\WalletService\WalletServiceUnitTests\bin\Release\WalletServiceUnitTests.pdb
+D:\Dropbox\Web Projects\BetssonTest\WalletService\WalletServiceUnitTests\obj\Release\WalletServiceUnitTests.dll
+D:\Dropbox\Web Projects\BetssonTest\WalletService\WalletServiceUnitTests\obj\Release\WalletServiceUnitTests.pdb

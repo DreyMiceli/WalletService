@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="41720e48-ddbc-431c-9320-854805aac12b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:2181/WalletService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WalletService.xsd" MetadataType="Schema" ID="9af5a785-7d4c-4a05-a370-8705d6f54f5a" SourceId="1" SourceUrl="http://localhost:2181/WalletService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WalletService.wsdl" MetadataType="Wsdl" ID="26c54dd1-3324-4526-bf12-b4b188cf772b" SourceId="1" SourceUrl="http://localhost:2181/WalletService.svc?wsdl" />
+    <MetadataFile FileName="WalletService1.xsd" MetadataType="Schema" ID="afd2b591-4e27-4c4b-9b31-b5a74a3cab0b" SourceId="1" SourceUrl="http://localhost:2181/WalletService.svc?xsd=xsd0" />
+    <MetadataFile FileName="WalletService2.xsd" MetadataType="Schema" ID="b17e9d7e-5e74-4a0b-a79a-3506cd90a7fb" SourceId="1" SourceUrl="http://localhost:2181/WalletService.svc?xsd=xsd2" />
+    <MetadataFile FileName="WalletService.disco" MetadataType="Disco" ID="0fc593ab-4fb1-449e-b974-a790dc4e9323" SourceId="1" SourceUrl="http://localhost:2181/WalletService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
