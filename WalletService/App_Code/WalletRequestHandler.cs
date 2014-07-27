@@ -13,7 +13,6 @@ namespace WalletService
         //Private Methods
         private static bool ValidateRequest(string methodName, Request request, ref string message) 
         {
-
             message = "";
 
             if (request == null)
