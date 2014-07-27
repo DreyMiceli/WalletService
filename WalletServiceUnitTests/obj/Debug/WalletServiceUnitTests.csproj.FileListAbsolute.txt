@@ -3,3 +3,9 @@ D:\Dropbox\Web Projects\BetssonTest\WalletService\WalletServiceUnitTests\bin\Deb
 D:\Dropbox\Web Projects\BetssonTest\WalletService\WalletServiceUnitTests\bin\Debug\WalletServiceUnitTests.pdb
 D:\Dropbox\Web Projects\BetssonTest\WalletService\WalletServiceUnitTests\obj\Debug\WalletServiceUnitTests.dll
 D:\Dropbox\Web Projects\BetssonTest\WalletService\WalletServiceUnitTests\obj\Debug\WalletServiceUnitTests.pdb
+D:\Dropbox\GitHub\WalletService\WalletServiceUnitTests\bin\Debug\WalletServiceUnitTests.dll.config
+D:\Dropbox\GitHub\WalletService\WalletServiceUnitTests\bin\Debug\WalletServiceUnitTests.dll
+D:\Dropbox\GitHub\WalletService\WalletServiceUnitTests\bin\Debug\WalletServiceUnitTests.pdb
+D:\Dropbox\GitHub\WalletService\WalletServiceUnitTests\obj\Debug\WalletServiceUnitTests.csprojResolveAssemblyReference.cache
+D:\Dropbox\GitHub\WalletService\WalletServiceUnitTests\obj\Debug\WalletServiceUnitTests.dll
+D:\Dropbox\GitHub\WalletService\WalletServiceUnitTests\obj\Debug\WalletServiceUnitTests.pdb
